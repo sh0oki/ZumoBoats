@@ -8,6 +8,6 @@ Please use [Arduino IDE](https://www.arduino.cc/en/main/software) to flash the c
 
 The code uses Adafruit Motor Shield V1 Library, make sure you add this library to compile the code. 
 
-BASIC BOAT
+## BASIC BOAT
 
 Example of a boat with one DC Motor and one Servo.  
