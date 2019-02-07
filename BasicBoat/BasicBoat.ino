@@ -63,15 +63,18 @@ void loop() {
   {
     switch(state)
     {
-      case STOP: break;
+      case STOP:
+        Serial.println("STOP"); 
+        DCMotor.run(RELEASE);
+        break;
       case SAIL_STRAIGHT: 
-      Serial.println("STR");
+        Serial.println("STR");
         DCMotor.run(FORWARD);
         DCMotor.setSpeed(250);
         myServo.write(15);
         break;
       case TURN_RIGHT:
-      Serial.println("right");
+        Serial.println("right");
         myServo.write(0);
         break;
       case TURN_LEFT:
